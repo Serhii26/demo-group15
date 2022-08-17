@@ -1,0 +1,150 @@
+
+.advantages {
+    padding-top: 40px;
+    padding-bottom: 34px;
+    background-color: var(--secondary-bcg-color);
+    @media screen and (min-width: 768px) {
+      padding-bottom: 34px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 60px;
+    }
+  }
+  .advantages__item {
+    list-style: none;
+    text-align: left;
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+    @media screen and (min-width: 768px) {
+      max-width: 180px;
+      &:nth-child(1) {
+        margin-right: 4px;
+        margin-bottom: 0;
+      }
+      &:nth-child(2) {
+        margin-right: 22px;
+        margin-bottom: 0;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 317px;
+      &:nth-child(1) {
+        margin-right: 115px;
+        margin-bottom: 0;
+      }
+      &:nth-child(2) {
+        margin-right: 80px;
+        margin-bottom: 0;
+      }
+    }
+    &:before {
+      display: block;
+      margin-bottom: 16px;
+      content: '';
+      height: 50px;
+      width: 33px;
+      background-color: var(--secondary-bcg-color);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      @media screen and (min-width: 768px) {
+        height: 50px;
+        width: 50px;
+        margin-bottom: 36px;
+      }
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 40px;
+      }
+    }
+    &:nth-child(1)::before {
+      background-image: url('../images/advantages/adv1-mobile@1x.png');
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx),
+        (min-resolution: 2dpi) {
+        background-image: url('../images/advantages/adv1-mobile@2x.png');
+      }
+      @media screen and (min-width: 768px) {
+        background-image: url('../images/advantages/adv1-tablet@1x.png');
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 2dppx),
+          (min-resolution: 2dpi) {
+          background-image: url('../images/advantages/adv1-tablet@2x.png');
+        }
+      }
+    }
+    &:nth-child(2)::before {
+      background-image: url('../images/advantages/adv2-mobile@1x.png');
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx),
+        (min-resolution: 2dpi) {
+        background-image: url('../images/advantages/adv2-mobile@2x.png');
+      }
+      @media screen and (min-width: 768px) {
+        background-image: url('../images/advantages/adv2-tablet@1x.png');
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 2dppx),
+          (min-resolution: 2dpi) {
+          background-image: url('../images/advantages/adv2-tablet@2x.png');
+        }
+      }
+    }
+    &:nth-child(3)::before {
+      background-image: url('../images/advantages/adv3-mobile@1x.png');
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx),
+        (min-resolution: 2dpi) {
+        background-image: url('../images/advantages/adv3-mobile@2x.png');
+      }
+      @media screen and (min-width: 768px) {
+        background-image: url('../images/advantages/adv3-tablet@1x.png');
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 2dppx),
+          (min-resolution: 2dpi) {
+          background-image: url('../images/advantages/adv3-tablet@2x.png');
+        }
+      }
+    }
+  }
+  .advantages__list {
+    padding-left: 0;
+    margin: 0;
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+  .advantages__title {
+    margin-bottom: 4px;
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    @media screen and (min-width: 768px) {
+      margin-bottom: 13px;
+      font-size: 48px;
+      line-height: 1.15;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 16px;
+      font-size: 58px;
+      line-height: 1.14;
+    }
+  }
+  .advantages__text {
+    margin-bottom: 0;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+    color: var(--secondary-text-color);
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.74;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.76;
+    }
+  }

@@ -1,0 +1,126 @@
+<!-- Modal window purchase -->
+<div class="backdrop is-hidden" data-modal-purchase data-modal-purchase-mobil>
+    <div class="modal-purchase">
+        <form action="" class="modal-purchase__form">
+            <h2 class="modal-purchase__form-header">Check out the purchase</h2>
+            <fieldset class="modal-purchase__fieldset">
+                <div class="modal-purchase__product">
+                    <div class="modal-purchase__form-field modal-purchase__form-field-product">
+                        <label for="tel" class="modal-purchase__checkbox-lable">Ice cream</label>
+                            <label class="modal-purchase__checkbox-lable">
+                                <input class="modal-purchase__checkbox-input" type="checkbox" name="term">
+                                <span class="modal-purchase__checkbox-icon"></span>
+                            </label>
+                        <label for="mail" class="modal-purchase__form-lable modal-purchase__form-lable-quantity">Quantity</label>
+                        <input type="number" class="modal-purchase__form-input modal-purchase__form-input-quantity">
+                    </div>
+    
+                    <div class="modal-purchase__form-field modal-purchase__form-field-product">
+                        <label for="tel" class="modal-purchase__checkbox-lable">Ice coffee</label>
+                        <label class="modal-purchase__checkbox-lable">
+                            <input class="modal-purchase__checkbox-input" type="checkbox" name="term">
+                            <span class="modal-purchase__checkbox-icon"></span>
+                        </label>
+                        <label for="mail" class="modal-purchase__form-lable modal-purchase__form-lable-quantity">Quantity</label>
+                        <input type="number" class="modal-purchase__form-input modal-purchase__form-input-quantity">
+                    </div>
+    
+                    <div class="modal-purchase__form-field modal-purchase__form-field-product">
+                        <label for="tel" class="modal-purchase__checkbox-lable">Milkshakes</label>
+                        <label class="modal-purchase__checkbox-lable">
+                            <input class="modal-purchase__checkbox-input" type="checkbox" name="term">
+                            <span class="modal-purchase__checkbox-icon"></span>
+                        </label>
+                        <label for="mail" class="modal-purchase__form-lable modal-purchase__form-lable-quantity">Quantity</label>
+                        <input type="number" class="modal-purchase__form-input modal-purchase__form-input-quantity">
+                    </div>
+                </div>
+                
+                <div class="modal-purchase__form-field">
+                    <label for="mail" class="modal-purchase__form-lable">Buyer name</label>
+                    <input type="text" name="mail" id="mail" class="modal-purchase__form-input" >
+                    <svg class="modal-purchase__form-icon">
+                        <use href="./images/icons.svg#icon-person"></use>
+                    </svg>
+                </div>
+
+                <div class="modal-purchase__form-field">
+                    <label for="mail" class="modal-purchase__form-lable">Phone number</label>
+                    <input type="tel" name="mail" id="mail" class="modal-purchase__form-input">
+                    <svg class="modal-purchase__form-icon">
+                        <use href="./images/icons.svg#icon-phone-18"></use>
+                    </svg>
+                </div>
+
+                <div class="modal-purchase__form-field">
+                    <label for="mail" class="modal-purchase__form-lable">Delivery address</label>
+                    <input type="text" name="mail" id="mail" class="modal-purchase__form-input">
+                    <svg class="modal-purchase__form-icon">
+                        <use href="./images/icons.svg#icon-location"></use>
+                    </svg>
+                </div>
+
+                <div class="modal-purchase__form-comment">
+                    <label for="comment" class="modal-purchase__form-lable">Comments</label>
+                    <textarea class="modal-purchase__form-textarea"  name="comment" id="comment"  placeholder="Enter text"></textarea>
+                </div>
+                
+                <div class="modal-purchase__radio">
+                    <label class="modal-purchase__radio-lable">Payment method:</label>
+                    <label class="modal-purchase__radio-lable">
+                        <input class="modal-purchase__radio-input" type="radio" name="term">
+                        <span class="modal-purchase__radio-icon"></span>
+                        <span class="modal-purchase__radio-lable">Cash</span>
+                    </label>
+                    <label class="modal-purchase__radio-lable">
+                        <input class="modal-purchase__radio-input" type="radio" name="term">
+                        <span class="modal-purchase__radio-icon"></span>
+                        <span class="modal-purchase__radio-lable">Credit card</span>
+                    </label>
+                </div>
+            </fieldset>
+            
+            
+            <button type="submit" class="modal-purchase__button-submit">Buy</button>
+
+            <button type="button" class="modal-purchase__close-button" data-modal-purchase-close>
+                <svg class="modal-purchase__close-button-icon">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+        </form>
+    </div>
+</div>
+
+<!-- Modal window about -->
+<div class="backdrop is-hidden" data-modal-about>
+    <div class="modal-about">
+        <h2 class="modal-about__first-header">tradition and love</h2>
+        <h3 class="modal-about__second-header">how it’s made?</h3>
+        <ul class="list modal-about__list">
+            <li class="modal-about__item">
+                <div class="modal-about__label">
+                    <svg class="modal-about__icon">
+                        <use href="./images/icons.svg#icon-icecream"></use>
+                    </svg>
+                    <span class="modal-about__item-header">Raw material quality control</span>
+                </div>
+                <span class="modal-about__item-description">Our Quality Control Division is committed to food safety, quality control and product development.</span>
+            </li>
+            <li class="modal-about__item">
+                <div class="modal-about__label">
+                    <svg class="modal-about__icon">
+                        <use href="./images/icons.svg#icon-icecream"></use>
+                    </svg>
+                    <span class="modal-about__item-header">Latest production technologies</span>
+                 </div>
+                <span class="modal-about__item-description">The digitalisation of commercial ice cream production.</span>
+            </li>
+        </ul>
+        <button type="button" class="modal-about__close-button" data-modal-about-close>
+            <svg class="modal-about__close-button-icon">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+    </div>
+</div>

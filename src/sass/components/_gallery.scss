@@ -1,0 +1,207 @@
+.section-gallery {
+  padding-top: 30px;
+  padding-bottom: 0;
+  background-image: linear-gradient(
+        to top,
+        var(--primary-text-color) 68%,
+        var(--secondary-bcg-color) 18%);
+    
+    @media screen and (min-width: 768px){
+        background-image: linear-gradient(
+        to top,
+        var(--primary-text-color) 47%,
+        var(--secondary-bcg-color) 53%);
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 60px;
+        padding-top: 60px;
+        background-image: linear-gradient(
+        to top,
+        var(--primary-text-color) 76%,
+        var(--secondary-bcg-color) 24%);
+      }
+
+}
+
+.gallery {
+    perspective: 600px;
+    perspective-origin: 50% 0%; 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    height: 136px;
+    padding-top: 2px;
+   
+    @media screen and (min-width: 768px){
+    height: 327px;
+    gap: 6px;
+    }
+    @media screen and (min-width: 1200px){
+    padding-left: 93px;
+    padding-right: 94px;
+    height: 430px;
+    gap: 8px;
+    }
+    
+    &__cards {
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 3px;
+        @media screen and (min-width: 320px){
+        width: 43px;
+        height: 100%;
+        }
+        @media screen and (min-width: 768px){
+        width: 105px;
+        row-gap: 6px;
+        }
+        @media screen and (min-width: 1200px){
+        width: 138px;
+        row-gap: 8px;
+        }
+    }
+        &__cards-ice {
+        overflow: hidden;
+        border-radius: 8px;
+        transition: all 1s linear;
+        @media screen and (min-width: 320px){
+        width: 43px;
+        height: 43px;
+        }
+        @media screen and (min-width: 768px){
+        border-radius: 20px;
+        width: 105px;
+        height: 105px;
+        }
+        @media screen and (min-width: 1200px){
+        width: 138px;
+        height: 138px;
+        }
+        &:hover{
+        transform: scale3d(1.1, 1.1, 1.1);  
+        }
+    }
+    &__cards-big {
+        width: 100%;
+        align-items: flex-start;
+        @media screen and (min-width: 320px){
+        width: 90px;
+        }
+        @media screen and (min-width: 768px){
+        width: 214px;
+        }
+        @media screen and (min-width: 1200px){
+        width: 283px;
+        }
+    }
+    &__cards-ice-big {
+        overflow: hidden;
+        border-radius: 20px;
+        transition: all 2s linear;
+        @media screen and (min-width: 320px){
+        width: 90px;
+        height: 90px;
+        }
+        @media screen and (min-width: 768px){
+        width: 214px;
+        height: 214px;
+        }
+        @media screen and (min-width: 1200px){
+        width: 283px;
+        height: 283px;
+        }
+        &:hover{
+        transform: scale3d(1.05, 1.05, 1.05);  
+        }
+    }
+    &__cards-top {
+        position: relative;
+        top: 10px;
+    }
+    &__cards-bottom {
+        position: relative;
+        top: -13px;
+        @media screen and (min-width: 768px){
+        top: -23px;
+        }
+    }
+    &__cards-last {
+        position: relative;
+        transition: all 2s linear;
+        @media screen and (min-width: 768px){
+        top: 13px;
+        }
+    }
+    &__cards-ice:hover > &__backdrop-desc {
+       @media screen and (min-width: 768px){
+        opacity: 0.6;
+        visibility: visible;
+       }
+      }
+     &__cards-ice-big:hover > &__backdrop-desc {
+       @media screen and (min-width: 768px){
+        opacity: 0.6;
+        visibility: visible;
+       }
+      }
+     &__backdrop-desc:hover > &__text {
+       @media screen and (min-width: 768px){
+        visibility: visible;
+       }  
+    }
+    &__backdrop-desc {
+        display: none;
+        @media screen and (min-width: 768px){
+        display: block;
+        position: absolute;
+        transform: translateY(-100%);
+        width: 105px;
+        height: 105px;
+        background-color: var(--secondary-bcg-color);
+        padding: 10px 15px;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.5s linear;
+        }
+
+        @media screen and (min-width: 1200px) {
+        width: 138px;
+        height: 139px; 
+        }
+        
+    }
+    &__backdrop-desc-big {
+        position: absolute;
+        transform: translateY(-100%);
+        background-color: var(--secondary-bcg-color);
+        padding: 10px 15px;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.5s linear;
+        width: 214px;
+        height: 214px; 
+        @media screen and (min-width: 1200px) {
+        width: 283px;
+        height: 283px; 
+        }
+    }
+    &__text {
+        font-size: 10px;
+        line-height: 1.55;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        color: var(--accent-color);
+        visibility: hidden;
+        transition: 0.5s;
+        @media screen and (min-width: 1200px){
+        font-size: 15px;
+      }
+    }
+  }
